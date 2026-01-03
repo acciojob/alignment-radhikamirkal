@@ -1,108 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HTML Assignment 3</title>
-  <style>
-    table {
-      border: 1px solid black;
-      border-spacing: 1px;
-      padding: 1px;
-      width: 100%;
-    }
-    td {
-      border: 1px solid black;
-      padding: 1px;
-    }
-    .middle {
-      text-align: center;
-    }
-    .center {
-      text-align: center;
-    }
-    .right {
-      text-align: right;
-    }
-    .green {
-      background-color: green;
-      height: 20px;
-    }
-    .blue {
-      background-color: blue;
-      height: 20px;
-    }
-  </style>
+    <title>HTML Assignment 3</title>
+
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: separate;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 1px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+    </style>
+
 </head>
 
 <body>
 
-<h1 style="text-align:center;">HTML Assignment #3</h1>
+<h2 align="center">HTML Assignment #3</h2>
 
-<!-- TABLE 1 -->
-<table class="middle" id="table-1">
-  <tr>
-    <td id="t11">left</td>
-    <td id="t12">center</td>
-    <td id="t13" class="right">right</td>
-  </tr>
-  <tr class="center">
-    <td>left</td>
-    <td>center</td>
-    <td class="right">right</td>
-  </tr>
-  <tr>
-    <td>left</td>
-    <td>center</td>
-    <td class="right">right</td>
-  </tr>
+
+<!---------------- TABLE 1 ---------------->
+<table id="table-1" class="middle" border="1" cellspacing="1" cellpadding="1">
+    <tr>
+        <td id="t11">left</td>
+        <td id="t12" class="center">center</td>
+        <td id="t13" class="right">right</td>
+    </tr>
+
+    <tr class="center">
+        <td>left</td>
+        <td class="center">center</td>
+        <td class="right">right</td>
+    </tr>
+
+    <tr>
+        <td>left</td>
+        <td class="center">center</td>
+        <td class="right">right</td>
+    </tr>
 </table>
 
-<br>
 
-<!-- TABLE 2 -->
-<table class="middle" id="table-2">
-  <tr>
-    <td id="t21" colspan="6"></td>
-  </tr>
-  <tr>
-    <td rowspan="4"></td>
-    <td></td>
-    <td colspan="3"></td>
-    <td rowspan="4"></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td colspan="3"></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td colspan="3"></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td colspan="3"></td>
-  </tr>
-  <tr>
-    <td colspan="6"></td>
-  </tr>
+<br><br>
+
+
+<!---------------- TABLE 2 ---------------->
+<table id="table-2" class="middle" border="1" cellspacing="1" cellpadding="1">
+
+    <tr>
+        <td id="t21" colspan="6"></td>
+    </tr>
+
+    <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+
+    <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+
+    <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+
+    <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+
+    <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+
 </table>
 
-<br>
 
-<!-- TABLE 3 -->
-<table class="middle" id="table-3">
-  <tr class="green">
-    <td colspan="3"></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td id="t-image">
-      <img src="https://upload.wikimedia.org/wikipedia/en/3/3f/Michael_Jordan_1988.jpg" width="200">
-    </td>
-    <td></td>
-  </tr>
-  <tr class="blue">
-    <td colspan="3"></td>
-  </tr>
+<br><br>
+
+
+<!---------------- TABLE 3 ---------------->
+<table id="table-3" class="middle" border="1" cellspacing="1" cellpadding="1">
+
+    <tr class="green">
+        <td colspan="3"></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td id="t-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Michael_Jordan_in_2014.jpg" 
+                 width="300">
+        </td>
+        <td></td>
+    </tr>
+
+    <tr class="blue">
+        <td colspan="3"></td>
+    </tr>
+
 </table>
 
 </body>
